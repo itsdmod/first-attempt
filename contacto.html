@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Web de David</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Web de jardinería rellena con Lorem Ipsum para el trabajo de enfoque de lenguajes de marca">
+	<meta name="keywords" content="jardneria,jardin,flor,flores,planta,plantas,trabajo de enfoque,html,css">
+	<meta name="author" content="David Lozano Ramos">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Fuentes externas de Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+	<!-- Font awesome -->
+	<script src="https://kit.fontawesome.com/8020923e21.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+	<header>
+		<div id="headercontainer">
+			<div id="headertext">
+				<h1>Flores desde tu pantalla</h1>
+				<p>Compra semillas y te enseñamos a cuidarlas</p>
+			</div>
+			<img src="media/img/genheader.jpg" alt="Imagen de girasol">
+		</div>
+		<nav>
+			<a href="/">Inicio</a>
+			<a href="/nosotros.html">¿Quiénes somos?</a>
+			<a href="/productos.html">Productos</a>
+			<a href="/contacto.html" class="current">Contacto</a>
+			<a href="/trabaja.html">Trabaja</a>
+		</nav>
+	</header>
+
+	<div id="contentcontainer">
+		<h1 class="pagetitle">Contacto</h1>
+		<div class="contactoestrechocont">
+			<iframe id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Av.%20Manuel%20Siurot,%2054%20Huelva+(Almac%C3%A9n%20jardiner%C3%ADa)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://mapswebsite.net/es'>mapswebsite.net/es</a> <script src='https://embedmaps.com/google-maps-authorization/script.js?id=a45cdaa2f0c837a11ef8e972b62f014aee305dd0'></script>
+			
+			<ul class="fa-ul">
+				<li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>(+34) 123-456-789</li>
+				<li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>hola@floresdesdetupantalla.com</li>
+				<li><span class="fa-li"><i class="fa-solid fa-map-location-dot"></i></span>Calle Falsa, 123</li>
+			</ul>
+
+		</div>
+
+		<div class="contactoformulariocont">
+			<h2>Contacta con nosotros</h2>
+			<form action="#" method="get">
+				<p>Nombre <br><input type="text" name="nombre" placeholder="Tu nombre" pattern="[^<>¿?¡!\x22]+" required></p>
+				<p>E-mail <br><input type="email" name="email" placeholder="Tu e-mail" required></p>
+				<p>Teléfono <br><input type="tel" name="telefono" placeholder="Formato: 000-00-00-00" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required></p>
+				<p>Mensaje<br><textarea name="mensaje" placeholder="Motivo de consulta" required></textarea></p>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+
+	</div>
+
+	<footer>
+		<div id="footercolumnaizd">
+			<p>Copyright de mentira ©2024-2026</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis lobortis eros, nec bibendum justo volutpat sed. Aenean vel eleifend enim, tempor condimentum neque. Pellentesque eu tellus eu metus tempus euismod eu at tortor.</p>
+			<p>Maecenas tincidunt tristique velit, sed tempus est consequat eget. Nullam nisl odio, congue sit amet elementum eu, cursus vel lectus.</p>
+		</div>
+		<div id="footercolumnadch">
+			<p>También puedes visitarnos en</p>
+			<table>
+				<tr>
+					<td><a href="https://www.facebook.com/"><img src="media/img/genfooterfacebook.png" alt="Icono Facebook"></a></td>
+					<td><a href="https://instagram.com/"><img src="media/img/genfooterinstagram.png" alt="Icono Instagram"></a></td>
+					<td><a href="https://www.youtube.com/"><img src="media/img/genfooteryoutube.png" alt="Icono Youtube"></a></td>
+				</tr>
+			</table>
+		</div>
+	</footer>
+
+</body>
+
+</html>

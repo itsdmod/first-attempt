@@ -1,0 +1,722 @@
+body{
+	background-image: url("media/img/genbg.webp");
+	background-repeat: repeat;
+	background-color: #e9f1e2;
+	margin: 0;
+}
+
+header{
+	margin: auto;
+	height: auto;
+	width: 90%;
+	max-width: 804px;
+	min-width: 712px;
+}
+
+::selection {
+	background: #f6e16b;
+	color: #c36700;
+}
+
+#headercontainer{
+	position: relative;
+	height: 203px;
+}
+
+#headercontainer img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+#headertext {
+	position: absolute;
+	text-align: right;
+	top: 50px;
+	right: 10px;
+}
+
+#headertext h1{
+	font-family: "Parisienne", cursive;
+	background-color: #24453c;
+	color: #f6e06f;
+	font-size: 54px;
+	margin: 0;
+	margin-right: -10px;
+	display: inline-block;
+	padding: 0px 30px;
+}
+
+#headertext p{
+	color: #24453c;
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0;
+	font-family: "Poiret One", sans-serif;
+}
+
+header nav{
+	background-color: #acc272;
+	text-align: center;
+	font-size: 0;
+}
+
+header nav a{
+	background-image: linear-gradient(to bottom right, #7c8d51, #acc272);
+	background-color: #acc272;
+	display: inline-block;
+	text-align: center;
+	padding: 20px 0px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 11px;
+	width: 20%;
+	vertical-align: middle;
+	font-family: "Lexend Giga", sans-serif;
+	position: relative;
+}
+
+header nav a::after{
+	content: '';
+	position: absolute;
+	height: 5px;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	background: #f6e16b;
+	transition: width .5s;
+}
+
+header nav a:hover:after{
+	width: 100%;
+}
+
+header nav a.current{
+	background-image: linear-gradient(to bottom right, #c36700, #f6e16b);
+	background-color: #f6e16b;
+	color: white;
+}
+
+header nav a.current::after{
+	content: '';
+	position: absolute;
+	height: 5px;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	background: #c36700;
+	transition: width .5s;
+}
+
+header nav a.current:hover:after{
+	width: 100%;
+}
+
+footer{
+	background-color: #24453c;
+	width: 90%;
+	max-width: 804px;
+	min-width: 712px;
+	margin: auto;
+	padding:10px 0 10px;
+	color: #acc272;
+	font-size: 0;
+}
+
+#footercolumnaizd{
+	display: inline-block;
+	width: 57%;
+	max-width: 458px;
+	min-width: 405px;
+	box-sizing: border-box;
+	vertical-align: top;
+	padding: 0px 20px;
+}
+
+#footercolumnadch{
+	display: inline-block;
+	width: 43%;
+	max-width: 345px;
+	min-width: 306px;
+	box-sizing: border-box;
+	vertical-align: bottom;
+	padding: 0px 20px;
+	text-align: right;
+}
+
+#footercolumnadch img{
+	width: 40px;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+	transition: .5s;
+	padding: 0px;
+}
+
+#footercolumnadch img:hover{
+	width: 50px;
+}
+
+footer p{
+	color: white;
+	font-size: 13px;
+	font-family: "Lexend", sans-serif;
+}
+
+footer table{
+	float: right;
+}
+
+footer td{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding: 0px;
+}
+
+#contentcontainer {
+	margin: auto;
+	width: 90%;
+	max-width: 804px;
+	min-width: 712px;
+	background-color: #7f8d54;
+	padding:10px 0 10px;
+	color: #eaf1e3;
+	position: relative;
+	overflow: hidden;
+}
+
+main{
+	box-shadow: 0px 0px 10px #24453c;
+}
+
+main ::selection {
+	background: #e3b444;
+	color: #c36700;
+}
+
+#mainindex{
+	position: relative;
+	background-color: #ffe16c;
+	padding: 10px 30px;
+	width: 60%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin: 20px 0px 0px 20px;
+}
+
+main h1{
+	font-family: "Lexend Giga", sans-serif;
+	background-color: #24453c;
+	display: inline-block;
+	padding: 0px 40px;
+	margin-bottom: 0;
+	font-size: 26px;
+	color: white;
+	margin-left: -30px;
+}
+
+main p{
+	font-family: "Lexend", sans-serif;
+	color: #366236;
+	font-size: 18px;
+	text-align: justify;
+}
+
+section .sectionh2{
+	font-family: "Lexend Giga", sans-serif;
+	background-color: #24453c;
+	display: inline-block;
+	padding: 0px 40px;
+	margin-bottom: 0;
+	font-size: 24px;
+	color: white;
+}
+
+article h2{
+	color: white;
+	font-family: "Lexend Giga", sans-serif;
+	font-size: 20px;
+}
+
+h3{
+	color: white;
+	font-family: "Lexend Giga", sans-serif;
+	font-size: 20px;
+}
+
+section p{
+	font-family: "Lexend", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.seccionestrecha{
+	position: relative;
+	box-sizing: border-box;
+	width: 62%;
+	padding: 0px 0px 0px 30px;
+}
+
+.seccionancha{
+	margin: auto;
+	height: auto;
+	width: 90%;
+	max-width: 804px;
+	min-width: 712px;
+	font-size: 0px;
+}
+
+.seccionancha img{
+		width: 100%;
+		height: auto;
+		margin-bottom: 0px;
+}
+
+aside{
+	position: absolute;
+	right: 22px;
+	top: 30px;
+	width: 32%;
+	height: 90%;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 3px dotted #24453c;
+	padding: 20px;
+	text-align: center;
+}
+
+aside img{
+	width: 50px;
+	height: auto;
+}
+
+aside h2{
+	color:white;
+	font-family: "Lexend Giga", sans-serif;
+	text-align: center;
+	font-size: 22px;
+    line-height: 24px;
+    margin: 0;
+}
+
+aside p{
+	font-family: "Lexend", sans-serif;
+	margin: 50px 0px;
+}
+
+aside a{
+	text-decoration-style: wavy;
+	color: white;
+	text-decoration-color: #ffe16c;
+	transition: .5s;
+}
+
+aside a:hover{
+	color: #ffe16c;
+}
+
+#botonverproductos{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+
+#botonverproductos a{
+	background-color: #acc272;
+	display: inline-block;
+	text-align: center;
+	padding: 15px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 11px;
+	vertical-align: middle;
+	font-family: "Lexend Giga", sans-serif;
+	position: relative;
+	border-radius: 10px;
+	border: 2px solid #24453c;
+	width: 120px;
+	margin-bottom: 20px;
+	transition: .5s;
+}
+
+#botonverproductos a:hover{
+	background-color: #c9750c;
+	font-size: 13px;
+	width: 140px;
+}
+
+/* NOSOTROS */
+
+#mainnosotros{
+	position: relative;
+	background-color: #ffe16c;
+	padding: 10px 30px;
+	width: 95%;
+	max-width: 763px;
+	min-width: 672px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin: 20px 0px 0px 20px;
+}
+
+.seccionancha video{
+		width: 100%;
+		height: auto;
+		margin-bottom: 0px;
+}
+
+.seccionestrechadch{
+	display:inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 50%;
+	padding: 0px 30px 0px 15px;
+	float: right;
+	text-align: right;
+}
+
+.nosotrossectionh2{
+	margin-right: -30px;
+	font-family: "Lexend Giga", sans-serif;
+	background-color: #24453c;
+	display: inline-block;
+	padding: 0px 40px;
+	margin-bottom: 0;
+	font-size: 24px;
+	color: white;
+}
+
+#nosotrosgaleria-cont{
+	display:inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 50%;
+	padding: 15px 0px 0px 20px;
+	float: left;
+}
+
+.nosotrosgaleria-trozo{
+	display:inline-block;
+	margin: 0px 3px 7px 0px;
+	border: 1px solid #24453c;
+	width: 47%;
+	vertical-align: top;
+}
+
+.nosotrosgaleria-trozo img {
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+	display: block;
+}
+
+.nosotrosgaleria-descripcion {
+	padding: 15px;
+	text-align: center;
+	font-family: "Lexend", sans-serif;
+	font-size: 12px;
+	background-color: #24453c;
+}
+
+h1.pagetitle{
+	font-family: "Parisienne", cursive;
+	text-align: center;
+	margin: 0;
+	margin-top: -10px;
+	font-size: 60px;
+	color: white;
+	background-image: url(media/img/titlebg.jpg);
+	background-color: #f6e16b;
+	padding-top: 10px;
+}
+
+/* PRODUCTOS */
+
+h3.h3productos{
+	text-align: center;
+	font-family: "Lexend Giga", sans-serif;
+	color: white;
+	font-size: 23px;
+	margin: 5px;
+}
+
+table.productos  {
+	width: 95%;
+	border: 1px solid #24453c;
+	font-family: "Lexend", sans-serif;
+	border-collapse: collapse;
+	margin: 20px auto;
+}
+
+table img{
+	width: 50px;
+	height: auto;
+	padding: 10px;
+}
+
+th{
+	font-family: "Lexend Giga", sans-serif;
+	background-color: #24453c;
+	padding: 10px;
+	border-right: 1px dashed #366236;
+}
+
+td.estaciones{
+	font-family: "Lexend Giga", sans-serif;
+	text-align: center;
+	background-color: #c36700;
+	border-bottom: 1px dashed #f49217;
+}
+
+td.precios{
+	text-align: center;
+}
+
+.productos tr:nth-child(even){
+	background-color: #90a35e;
+}
+
+.productos tr{
+	background-color: #9aad68;
+	transition: .3s;
+}
+
+.productos td:last-child{
+	border-left: 1px dashed #acc272;
+}
+
+.productos tr:hover{
+	background-color: #f49217;
+}
+
+/* CONTACTO */
+
+.contactoestrechocont {
+	display:inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 45%;
+	padding: 15px 0px 0px 20px;
+	float: left;
+}
+
+.contactoestrechocont iframe{
+	border-radius: 10px;
+	width: 100%;
+	height: 300px;
+	border: none;
+}
+
+.contactoestrechocont ul{
+	font-family: "Lexend", sans-serif;
+}
+
+.fa-ul{
+	line-height: 35px;
+}
+
+.fa-li{
+	font-size: 20px;
+}
+
+.contactoformulariocont{
+	font-family: "Lexend", sans-serif;
+	display:inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 53%;
+	padding: 0px 30px 0px 15px;
+	float: right;
+	text-align: right;
+}
+
+.contactoformulariocont h2{
+	margin-right: -30px;
+	font-family: "Lexend Giga", sans-serif;
+	background-color: #24453c;
+	display: inline-block;
+	padding: 0px 40px;
+	margin-bottom: 0;
+	font-size: 24px;
+	color: white;
+}
+
+.contactoformulariocont form{
+	text-align: center;
+
+}
+
+.contactoformulariocont input{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+.contactoformulariocont textarea{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+.contactoformulariocont input[type=submit]{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #d78a11;
+  font-family: "Lexend", sans-serif;
+  transition: .5s;
+}
+
+.contactoformulariocont input[type=submit]:hover {
+  background-color: #c36700;
+  box-shadow: 0px 0px 10px #ffe16c;
+  letter-spacing: 3px;
+}
+
+/* TRABAJA */
+
+.trabaja td{
+	font-family: "Lexend", sans-serif;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.trabaja legend{
+	font-family: "Lexend Giga", sans-serif;
+	font-size: 20px;
+	margin: 10px;
+}
+
+.trabaja fieldset{
+	background-color: #6d7d45;
+	margin-bottom: 20px;
+	padding: 0px 20px 10px 20px;
+}
+
+.titulacion{
+	width: 50%;
+	text-align: center;
+}
+
+.tdcenter{
+	text-align: center;
+}
+
+.idiomas{
+	width: 41%;
+}
+
+.trabaja input[type=text],input[type=number],input[type=date],input[type=tel],input[type=email]{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+.trabaja textarea{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+.trabaja input[type=submit]{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #d78a11;
+  font-family: "Lexend", sans-serif;
+  transition: .5s;
+}
+
+.trabaja input[type=submit]:hover {
+  background-color: #c36700;
+  box-shadow: 0px 0px 10px #ffe16c;
+  letter-spacing: 3px;
+}
+
+.trabajadatospersonales{
+	width: 13%;
+}
+
+.trabaja select{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+.trabaja legend{
+	background-color: #24453c;
+	padding: 0px 10px;
+}
+
+.trabajaseccionancha{
+	margin: auto;
+	height: auto;
+	width: 90%;
+	max-width: 804px;
+	min-width: 712px;
+	font-size: 0px;
+	padding: 20px 0px;
+}
+
+.trabajaseccionancha h2{
+	color: white;
+	font-family: "Lexend Giga", sans-serif;
+	font-size: 20px;
+}
+
+.trabajaseccionancha p{
+	margin-bottom: 30px;
+}
+
+.trabajathconborde th{
+	border: 2px #6d7d45 solid;
+	font-family: "Lexend", sans-serif;
+	font-size: 16px;
+	padding: 10px;
+	font-weight: normal;
+}
+
+.trabajathconborde{
+	border-collapse: collapse;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Web de David</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Web de jardinería rellena con Lorem Ipsum para el trabajo de enfoque de lenguajes de marca">
+	<meta name="keywords" content="jardneria,jardin,flor,flores,planta,plantas,trabajo de enfoque,html,css">
+	<meta name="author" content="David Lozano Ramos">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Fuentes externas de Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+	<!-- Font awesome -->
+	<script src="https://kit.fontawesome.com/8020923e21.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+	<header>
+		<div id="headercontainer">
+			<div id="headertext">
+				<h1>Flores desde tu pantalla</h1>
+				<p>Compra semillas y te enseñamos a cuidarlas</p>
+			</div>
+			<img src="media/img/genheader.jpg" alt="Imagen de girasol">
+		</div>
+		<nav>
+			<a href="/">Inicio</a>
+			<a href="/nosotros.html">¿Quiénes somos?</a>
+			<a href="/productos.html">Productos</a>
+			<a href="/contacto.html">Contacto</a>
+			<a href="/trabaja.html" class="current">Trabaja</a>
+		</nav>
+	</header>
+
+	<div id="contentcontainer">
+		<div>
+			<h1 class="pagetitle">Trabaja</h1>
+			<section class="trabajaseccionancha">
+				<h2>Envíanos tus datos</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat vulputate dolor, nec maximus quam pellentesque iaculis. Vestibulum vel dolor sed erat varius tincidunt sed ut augue. Suspendisse potenti. Ut convallis ut quam nec egestas. </p>
+				<form action="#" method="get" class="trabaja">
+					<fieldset>
+						<legend>Datos personales</legend>
+						<table>
+							<tr>
+								<td class="trabajadatospersonales">
+									Nombre
+								</td>
+								<td><input type="text" name="nombre" placeholder="Tu nombre" pattern="[^<>¿?¡!\x22]+" required>
+								</td>
+								<td class="trabajadatospersonales">Apellidos</td>
+								<td><input type="text" name="apellidos" placeholder="Tus apellidos" pattern="[^<>¿?¡!\x22]+" required></td>
+							</tr>
+							<tr>
+								<td class="trabajadatospersonales">DNI</td>
+								<td><input type="text" name="dni" pattern="^[0-9]{8}-[A-Z]$" required></td>
+								<td class="trabajadatospersonales">Sexo</td>
+								<td><input type="radio" name="sexo" value="Hombre">Hombre / <input type="radio" name="sexo" value="Mujer">Mujer</td>
+							</tr>
+							<tr>
+								<!-- No se puede seleccionar solamente el año con el input de tipo fecha -->
+								<td class="trabajadatospersonales">Fecha de nacimiento</td>
+								<td><input type="date" name="fechadenacimiento" min="1900-01-01" max="2008-01-01" required></td>
+								<td class="trabajadatospersonales">Ciudad</td>
+								<td><input type="text" name="ciudad" placeholder="Tu ciudad" pattern="[^<>¿?¡!\x22]+" required></td>
+							</tr>
+							<tr>
+								<td class="trabajadatospersonales">Nacionalidad</td>
+								<td><input type="text" name="nacionalidad" placeholder="Tu nacionalidad" pattern="[^<>¿?¡!\x22]+" required></td>
+								<td class="trabajadatospersonales">Código postal</td>
+								<td><input type="text" name="codigopostal" pattern="[0-9]{5}" placeholder="Introduce 5 números" required></td>
+							</tr>
+							<tr>
+								<td class="trabajadatospersonales">Teléfono</td>
+								<td><input type="tel" name="telefono" placeholder="Formato: 000-00-00-00" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required></td>
+								<td class="trabajadatospersonales">E-mail</td>
+								<td><input type="email" name="email" placeholder="Tu e-mail" required></td>
+							</tr>
+						</table>
+					</fieldset>
+					<fieldset>
+						<legend>Formación</legend>
+						<table class="trabajathconborde">
+							<tr>
+								<th class="titulacion">Titulación</th>
+								<th class="tdcenter">Año de inicio</th>
+								<th class="tdcenter">Año de finalización</th>
+							</tr>
+							<tr>
+								<td><input type="text" name="titulacion1" placeholder="Titulación" pattern="[^<>¿?¡!\x22]+" required></td>
+								<td class="tdcenter"><input type="date" name="titulacioninicio1" min="1900-01-01" max="2008-01-01" required></td>
+								<td class="tdcenter"><input type="date" name="titulacionfin1" min="1900-01-01" max="2008-01-01" required></td>
+							</tr>
+							<tr>
+								<td><input type="text" name="titulacion2" placeholder="Titulación" pattern="[^<>¿?¡!\x22]+" required></td>
+								<td class="tdcenter"><input type="date" name="titulacioninicio2" min="1900-01-01" max="2008-01-01" required></td>
+								<td class="tdcenter"><input type="date" name="titulacionfin2" min="1900-01-01" max="2008-01-01" required></td>
+							</tr>
+						</table>
+					</fieldset>
+					<fieldset>
+						<legend>Idiomas</legend>
+						<table class="trabajathconborde">
+							<tr>
+								<th class="idiomas">Idioma</th>
+								<th>Hablado</th>
+								<th>Leído</th>
+								<th>Escrito</th>
+							</tr>
+							<tr>
+								<td><input type="text" name="idioma1" placeholder="Idioma" pattern="[^<>¿?¡!\x22]+" required></td>
+								<td>
+									<select name="hablado1" required>
+										<option value="" disabled selected>Selecciona</option>
+										<option value="excelente">Excelente</option>
+										<option value="bien">Bien</option>
+										<option value="regular">Regular</option>
+										<option value="nada">Nada</option>
+									</select>
+								</td>
+								<td>
+									<select name="leido1" required>
+										<option value="" disabled selected>Selecciona</option>
+										<option value="excelente">Excelente</option>
+										<option value="bien">Bien</option>
+										<option value="regular">Regular</option>
+										<option value="nada">Nada</option>
+									</select>
+								</td>
+								<td>
+									<select name="escrito1" required>
+										<option value="" disabled selected>Selecciona</option>
+										<option value="excelente">Excelente</option>
+										<option value="bien">Bien</option>
+										<option value="regular">Regular</option>
+										<option value="nada">Nada</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="text" name="idioma2" placeholder="Idioma" pattern="[^<>¿?¡!\x22]+" required></td>
+								<td>
+									<select name="hablado2" required>
+										<option value="" disabled selected>Selecciona</option>
+										<option value="excelente">Excelente</option>
+										<option value="bien">Bien</option>
+										<option value="regular">Regular</option>
+										<option value="nada">Nada</option>
+									</select>
+								</td>
+								<td>
+									<select name="leido2" required>
+										<option value="" disabled selected>Selecciona</option>
+										<option value="excelente">Excelente</option>
+										<option value="bien">Bien</option>
+										<option value="regular">Regular</option>
+										<option value="nada">Nada</option>
+									</select>
+								</td>
+								<td>
+									<select name="escrito2" required>
+										<option value="" disabled selected>Selecciona</option>
+										<option value="excelente">Excelente</option>
+										<option value="bien">Bien</option>
+										<option value="regular">Regular</option>
+										<option value="nada">Nada</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+					<input type="submit" value="Enviar">
+				</form>
+			</section>
+		</div>
+
+	</div>
+
+	<footer>
+		<div id="footercolumnaizd">
+			<p>Copyright de mentira ©2024-2026</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis lobortis eros, nec bibendum justo volutpat sed. Aenean vel eleifend enim, tempor condimentum neque. Pellentesque eu tellus eu metus tempus euismod eu at tortor.</p>
+			<p>Maecenas tincidunt tristique velit, sed tempus est consequat eget. Nullam nisl odio, congue sit amet elementum eu, cursus vel lectus.</p>
+		</div>
+		<div id="footercolumnadch">
+			<p>También puedes visitarnos en</p>
+			<table>
+				<tr>
+					<td><a href="https://www.facebook.com/"><img src="media/img/genfooterfacebook.png" alt="Icono Facebook"></a></td>
+					<td><a href="https://instagram.com/"><img src="media/img/genfooterinstagram.png" alt="Icono Instagram"></a></td>
+					<td><a href="https://www.youtube.com/"><img src="media/img/genfooteryoutube.png" alt="Icono Youtube"></a></td>
+				</tr>
+			</table>
+		</div>
+	</footer>
+
+</body>
+
+</html>
